@@ -90,3 +90,12 @@ main {
     transform: translateY(0px);
     opacity: 1;
 }
+
+.link-color{
+    color: #ee6c4d;
+}
+
+.link-color:hover{
+    color: #c56c55;
+    text-decoration: none;
+}

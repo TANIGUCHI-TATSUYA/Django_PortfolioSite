@@ -1,0 +1,44 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+<h3 class="mb-4">{{work_data.title}}</h3>
+<div class="card top mb-4">
+    <img src="{{ work_data.url }}" alt="">
+</div>
+
+<div class="row">
+    <div class="col-sm-4 mb-4">
+        <h4 class="mb-3">INFORMATION</h4>
+        <p>
+            <i class="fas fa-laptop-code mr-2"></i>
+            <span class="font-weghit-bolder">SKILLS:</span>
+            {{ work_data.skill }}
+        </p>
+        <hr>
+        <p>
+            <i class="fab fa-github mr-2"></i>
+            <span class="font-weghit-bolder">GITHUB:</span>
+            {% if work_date.url %}
+            <a href="{{ work_date.url }}" target="_blank" class="link-color">Link</a>
+            {% else %}
+            private
+            {% endif %}
+
+        </p>
+        <hr>
+        <p>
+            <i class="far fa-calendar-alt mr-2"></i>
+            <span class="font-weghit-bolder">CREATED:</span>
+            {{ work_data.created }}
+        </p>
+        <hr>
+    </div>
+    <div class="col-sm-8 mb-5">
+        <h4 class="mb-3">PROJECT DESCRIPTION</h4>
+        <p>{{work_data.description | linebreaksbr}}</p>
+    </div>
+</div>
+
+
+{% endblock %}
