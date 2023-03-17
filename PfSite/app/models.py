@@ -19,7 +19,7 @@ class Profile(models.Model):
 class Work(models.Model):
     title = models.CharField('タイトル',max_length=100)
     image = models.ImageField(upload_to='images',verbose_name='イメージ画像')
-    thumnall =models.ImageField(upload_to='images',verbose_name='サムネイル',null=True,blank=True)
+    thumbnall =models.ImageField(upload_to='images',verbose_name='サムネイル',null=True,blank=True)
     skill = models.CharField('スキル',max_length=100)
     url = models.CharField('URL',max_length=100,null=True,blank=True)
     created = models.DateField('作成日')
