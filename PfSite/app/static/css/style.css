@@ -99,3 +99,12 @@ main {
     color: #c56c55;
     text-decoration: none;
 }
+
+.avatar img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.icon{
+    padding:b 10px 8px;
+}
