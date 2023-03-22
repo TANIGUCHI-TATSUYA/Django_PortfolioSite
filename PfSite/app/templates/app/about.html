@@ -39,7 +39,7 @@
         <h5>{{experience.occupation}} <span class="small text-secondary">-{{experience.company}}-</span></h5>
         <p class="mb-1">{{experience.period}}</p>>
     </div>
-    <p class="mb-1">{{experience.description}}</p>
+    <p class="mb-1">{{experience.description| linebreaksbr }}</p>
     <p>{{experience.place}}</p>
     <hr>
     {% endfor %}
