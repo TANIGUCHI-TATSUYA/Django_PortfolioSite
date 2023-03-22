@@ -1,2 +1,4 @@
 setting_local.py
-_pycache_
+_pycache_/
+db-volumes/
+db.sqlite3
